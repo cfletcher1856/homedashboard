@@ -1,0 +1,248 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu);
+@import url("fonts.css");
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: 0;
+    font-family: 'Ubuntu';
+    background-color: black;
+}
+
+#container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#clock{
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.time{
+    font-size: 180px;
+}
+
+.date{
+    font-size: 50px;
+}
+
+.grey{
+    color: #888;
+    font-size: inherit;
+}
+
+#earth{
+    width: 500px;
+    height: 500px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+#moon{
+    width: 250px;
+    height: 250px;
+    left: 500px;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+#weather{
+    background-color: black;
+    right: 0;
+    top: 300px;
+    position: absolute;
+    overflow: hidden;
+    width: 620px;
+}
+
+#weather #current_icon,
+#weather #current_temp,
+#weather #current_text{
+  height: 100px;
+  color: #fff;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-size: 20px;
+}
+
+#weather #current_icon{
+  // background-color: blue;
+  margin-bottom: 0;
+  width: 90px;
+  font-size: 100px;
+  height: 92px;
+  padding-top: 8px;
+}
+
+#weather #current_temp{
+  // background-color: red;
+  width: 140px;
+  font-size: 90px;
+}
+
+#weather #current_text{
+  // background-color: green;
+  width: 375px;
+  text-align: left;
+  font-size: 50px;
+  padding-left: 10px;
+}
+
+#fivedayweather{
+  right: 0;
+  top: 436px;
+  position: absolute;
+  overflow: hidden;
+  width: 620px;
+}
+
+div.icon-0:before { content: ":"; }
+div.icon-1:before { content: "p"; }
+div.icon-2:before { content: "S"; }
+div.icon-3:before { content: "Q"; }
+div.icon-4:before { content: "S"; }
+div.icon-5:before { content: "W"; }
+div.icon-6:before { content: "W"; }
+div.icon-7:before { content: "W"; }
+div.icon-8:before { content: "W"; }
+div.icon-9:before { content: "I"; }
+div.icon-10:before { content: "W"; }
+div.icon-11:before { content: "I"; }
+div.icon-12:before { content: "I"; }
+div.icon-13:before { content: "I"; }
+div.icon-14:before { content: "I"; }
+div.icon-15:before { content: "W"; }
+div.icon-16:before { content: "I"; }
+div.icon-17:before { content: "W"; }
+div.icon-18:before { content: "U"; }
+div.icon-19:before { content: "Z"; }
+div.icon-20:before { content: "Z"; }
+div.icon-21:before { content: "Z"; }
+div.icon-22:before { content: "Z"; }
+div.icon-23:before { content: "Z"; }
+div.icon-24:before { content: "E"; }
+div.icon-25:before { content: "E"; }
+div.icon-26:before { content: "3"; }
+div.icon-27:before { content: "a"; }
+div.icon-28:before { content: "A"; }
+div.icon-29:before { content: "a"; }
+div.icon-30:before { content: "A"; }
+div.icon-31:before { content: "6"; }
+div.icon-32:before { content: "1"; }
+div.icon-33:before { content: "6"; }
+div.icon-34:before { content: "1"; }
+div.icon-35:before { content: "W"; }
+div.icon-36:before { content: "1"; }
+div.icon-37:before { content: "S"; }
+div.icon-38:before { content: "S"; }
+div.icon-39:before { content: "S"; }
+div.icon-40:before { content: "M"; }
+div.icon-41:before { content: "W"; }
+div.icon-42:before { content: "I"; }
+div.icon-43:before { content: "W"; }
+div.icon-44:before { content: "a"; }
+div.icon-45:before { content: "S"; }
+div.icon-46:before { content: "U"; }
+div.icon-47:before { content: "S"; }
+
+.icon{
+    font-family: 'weather';
+    font-size: 80px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+#weather .updated {
+  opacity: 0.45;
+}
+
+.weather_box{
+  background-color:#000000;
+  background-image: none;
+  font-family:Arial,Helvetica,Verdana,sans-serif;
+  color:#FFFFFF;
+  text-shadow:0 1px 3px #555;
+  text-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
+  font-size:12px;
+  line-height:13px;
+  position:relative;
+  width:600px;
+  height:200px;
+  float: right;
+  margin-right: 15px;
+}
+
+.weather_box .text{
+  position:relative;
+  z-index:9;
+}
+
+.weather_widget{
+  position:absolute;
+  z-index:9;
+}
+
+.weather_box .temperatures{
+  font-size:44px;
+  line-height:40px;
+  letter-spacing:-0.1em;
+  font-weight:normal;
+  margin-bottom: 5px;
+}
+
+.weather_box .day{
+  font-size:22px;
+  font-weight:bold;
+  margin:0 0 40px;
+  text-align: left;
+}
+
+.weather_box .day1,
+.weather_box .day2,
+.weather_box .day3,
+.weather_box .day4,
+.weather_box .day5{
+  position:relative;
+  float:left;
+  width:104px;
+  height:184px;
+  padding:8px;
+  text-align:left;
+}
+
+.weather_box .description{
+  font-size:14px;
+  line-height:15px;
+  font-weight:bold;
+  margin:0 0 4px;
+}
+
+.weather_box .pictoSize1{
+  top:50px;
+  left:27px;
+}
+
+.pictoSize1{
+  position: absolute;
+}
+
+.weather_box .overlay{
+  position:absolute;
+  z-index:2;
+  background:transparent url("/images/grand-5days-overlay.png") no-repeat 0 0;
+  width:600px;
+  height:200px;
+}
