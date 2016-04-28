@@ -37,7 +37,7 @@ getWeather = function(){
       five_day_html += '</div><div class="overlay"></div></div>';
 
       var timestamp = moment(weather.updated);
-      html += '<p class="updated">Updated '+moment(timestamp).fromNow()+'</p>';
+      html += '<p class="updated grey">Updated '+moment(timestamp).fromNow()+'</p>';
 
       $("#fivedayweather").html(five_day_html);
       $("#weather").html(html);
